@@ -13,7 +13,7 @@ let secondCard = 0
 let totalArr = []
 let totalNum = 0
 let newCard = 0
-let money = 200
+let money = 120
 let newName = ''
 
 function generateRandomNumber(){
