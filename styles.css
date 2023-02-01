@@ -107,3 +107,15 @@ button{
 .money{
     margin-top: 2rem;
 }
+@media screen and (min-width: 760px){
+    .rules{
+        width: 400px;
+        left: 35%;
+    }
+    button{
+        transition: .4s;
+    }
+    button:hover{
+        transform: scale(1.11);
+    }
+}

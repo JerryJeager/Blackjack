@@ -55,7 +55,7 @@ acceptBtn.addEventListener("click", () => {
     }else{
         newName = name.value
     }
-    nameMoneyStatus.textContent = `${newName}: $200`
+    nameMoneyStatus.textContent = `${newName}: $120`
     intro.style.display = "none"
 })
 
