@@ -32,7 +32,7 @@ function startGame(){
     totalNum = totalArr.reduce((a, b) => a + b)
     sum.textContent = `sum: ${totalNum} `
     money = money - 10
-    nameMoneyStatus.textContent = `${newName}: ${money}`
+    nameMoneyStatus.textContent = `${newName}: $${money}`
     confirmBlackJack()
     endGame()
 }
@@ -66,12 +66,12 @@ function confirmBlackJack(){
         statusInfo.textContent = "you're out of the game"
         newBtn.removeEventListener("click", drawNewCard)
         money = money - 20
-        nameMoneyStatus.textContent = `${newName}: ${money}`
+        nameMoneyStatus.textContent = `${newName}: $${money}`
     }else{
         statusInfo.textContent = "you've got blackjack"
         newBtn.removeEventListener("click", drawNewCard)
         money = money + 30
-        nameMoneyStatus.textContent = `${newName}: ${money}`
+        nameMoneyStatus.textContent = `${newName}: $${money}`
     }
 }
 
