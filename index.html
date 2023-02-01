@@ -13,6 +13,29 @@
         <h1>Blackjack</h1>
         <i class="fa-solid fa-diamond"></i>
     </header>
+    <section class="rules">
+        <h2>Hi there! welcome to Jerry's Blackjack game</h2>
+        <p>Instructions:</p>
+        <ul>
+            <li>You are given $200 initially at the start of the game</li>
+            <li>At the start of the game, two random cards are given to you</li>
+            <li>You get blackjack! when the total cards sum up to 21</li>
+            <li>When you lose, $20 is deducted from your account</li>
+            <li>When you win, $30 is added to your account</li>
+            <li>You need $10 to play each round/new game</li>
+            <li>It's game over for you if you have $20 or less in your account</li>
+            <li>When you're out of the game, you have to start a new one</li>
+            <li>Input your name and accept to begin</li>
+        </ul>
+
+        <div class="name-accept">
+            <input type="text" required placeholder="Your name">
+            <button class="accept-btn">accept</button>
+        </div>
+
+        <p class="rich-flex">21, can you do some' for me? Can you hit a lil' rich flex for me?</p>
+
+    </section>
     <section class="blackjack-game">
         <div class="game-status">
             <h2 class="status-info">Want to play a round?</h2>
@@ -24,6 +47,9 @@
         <div class="btns">
             <button class="start-btn">START GAME</button>
             <button class="new-btn">NEW CARD</button>
+        </div>
+        <div class="money">
+            <p class="name">Jerry: $200</p>
         </div>
     </section>
     <script src="script.js"></script>

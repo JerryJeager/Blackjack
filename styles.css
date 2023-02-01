@@ -23,6 +23,57 @@ header{
     align-self: center;
     margin-left: 5px;
 }
+.rules {
+    position: fixed;
+    margin: 2rem auto;
+    left: 5%;
+    height: 400px;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    overflow: scroll;
+    padding: 2em;
+}
+.rules h2{
+    color: #6C63FF;
+}
+.rules h2 + p{
+    margin-top: 1.5rem;
+    color:rgba(108, 99, 255, .7)
+}
+ul{
+    margin-top: 1.5rem;
+}
+li{
+    color:rgba(108, 99, 255, .7);
+    line-height: 1.6;
+}
+.name-accept{
+    margin: 1.3rem;
+    display: flex;
+}
+input{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: #6C63FF;
+    caret-color: red;
+    padding-left: 10px;
+    color: white;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, .6);
+}
+.accept-btn{
+    background: #6C63FF;
+    color: white;
+    margin-left: 10px;
+}
+.rich-flex{
+    color:rgba(108, 99, 255, .7);
+    text-align: center;
+}
 .blackjack-game{
     color: white;
     text-align: center;
@@ -52,4 +103,7 @@ button{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     font-size: .9rem;
+}
+.money{
+    margin-top: 2rem;
 }
