@@ -14,8 +14,10 @@ function generateRandomNumber(){
     return Math.floor(Math.random() * 13) + 1
 }
 
-
-startBtn.addEventListener("click", () => {
+function startGame(){
+    newBtn.addEventListener("click", drawNewCard)
+    totalArr = []
+    cards.textContent = `cards: `
     firstCard = generateRandomNumber()
     secondCard = generateRandomNumber()
     cards.textContent += `${firstCard} ${secondCard} `
@@ -24,25 +26,29 @@ startBtn.addEventListener("click", () => {
     totalNum = totalArr.reduce((a, b) => a + b)
     sum.textContent = `sum: ${totalNum} `
     confirmBlackJack()
-})
+    
+}
 
-newBtn.addEventListener("click", () => {
+function drawNewCard(){
     newCard = generateRandomNumber()
     cards.textContent += `${newCard} `
     totalArr.push(newCard)
     totalNum = totalArr.reduce((a, b) => a + b)
     sum.textContent = `sum: ${totalNum} `
     confirmBlackJack()
-})
+}
+
+startBtn.addEventListener("click", startGame)
 
 function confirmBlackJack(){
     if(totalNum <= 20){
         statusInfo.textContent = `Do you want to draw a new card`
     }else if(totalNum > 21){
         statusInfo.textContent = "you're out of the game"
+        newBtn.removeEventListener("click", drawNewCard)
     }else{
         statusInfo.textContent = "you've got blackjack"
+        newBtn.addEventListener("click", drawNewCard)
     }
 }
 
-console.log(generateRandomNumber())
