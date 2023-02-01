@@ -10,6 +10,7 @@ body{
     /* color: #6C63FF; */
     height: 100vh;
     background:  linear-gradient(rgba(108, 99, 255, .7), rgba(108, 99, 255, .7));
+    font-family: 'Ubuntu', sans-serif;
 }
 header{
     margin: 2rem auto;
@@ -21,4 +22,34 @@ header{
 .fa-diamond{
     align-self: center;
     margin-left: 5px;
+}
+.blackjack-game{
+    color: white;
+    text-align: center;
+    margin-top: 10rem;
+}
+.card-info{
+    margin-top: 2rem;
+}
+.card-info p{
+    font-size: 1.2rem;
+}
+.btns{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    background: white;
+    color: #6C63FF;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
 }
