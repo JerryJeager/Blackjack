@@ -48,7 +48,7 @@ function confirmBlackJack(){
         newBtn.removeEventListener("click", drawNewCard)
     }else{
         statusInfo.textContent = "you've got blackjack"
-        newBtn.addEventListener("click", drawNewCard)
+        newBtn.removeEventListener("click", drawNewCard)
     }
 }
 
