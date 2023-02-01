@@ -34,7 +34,7 @@ function startGame(){
     money = money - 10
     nameMoneyStatus.textContent = `${newName}: ${money}`
     confirmBlackJack()
-    
+    endGame()
 }
 
 function drawNewCard(){
@@ -44,6 +44,7 @@ function drawNewCard(){
     totalNum = totalArr.reduce((a, b) => a + b)
     sum.textContent = `sum: ${totalNum} `
     confirmBlackJack()
+    endGame()
 }
 
 startBtn.addEventListener("click", startGame)
